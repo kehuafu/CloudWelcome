@@ -164,7 +164,7 @@ Page({
             delay: 100,
           })
           var animation_5 = wx.createAnimation({
-            duration: 2000,
+            duration: 3000,
             timingFunction: 'ease',
             delay: 100,
           })
@@ -205,8 +205,8 @@ Page({
    */
   welcome_btn(e) {
     console.log("立即体验", e)
-    wx.showToast({
-      title: '立即体验',
+    wx.redirectTo({
+      url: '/pages/home/home',
     })
   }
 })
