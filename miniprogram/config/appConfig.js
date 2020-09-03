@@ -1,0 +1,9 @@
+export const CDN_PATH = 'https://3gimg.qq.com/lightmap/xcx/demoCenter/images';
+export const PLUGIN_KEY = 'GE4BZ-VYIE3-TUX3J-YCDGR-IXPX2-AIF2Q';
+export const MOYUAN_KEY = 'GE4BZ-VYIE3-TUX3J-YCDGR-IXPX2-AIF2Q';
+export const BAIQIAN_KEY = 'GE4BZ-VYIE3-TUX3J-YCDGR-IXPX2-AIF2Q';
+export const YULU_KEY = 'GE4BZ-VYIE3-TUX3J-YCDGR-IXPX2-AIF2Q';
+export const DIFUNI_KEY = 'GE4BZ-VYIE3-TUX3J-YCDGR-IXPX2-AIF2Q';
+export const INDOOR_KEY = 'GE4BZ-VYIE3-TUX3J-YCDGR-IXPX2-AIF2Q';
+export const REFERER = '云迎新-小程序端';
+export const WEBSERVICE_APPID = 'wx92a1abf46cf2e0e4';

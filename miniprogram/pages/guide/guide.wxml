@@ -1,0 +1,13 @@
+<!--pages/guide/guide.wxml-->
+<map class="map" polygons="{{polygons}}" polyline='{{polyline}}' markers="{{markers}}" show-location='{{true}}' bindcallouttap="callouttap" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" bindtap='bindtap' style="width: 100%; height: 1334rpx;">
+	<view slot="callout">
+		<block wx:for="{{markerIds}}" wx:key="*this">
+			<cover-view marker-id="{{index}}" class="c_0">
+				<cover-view class="c_20">{{item}}</cover-view>
+				<cover-view class="img_20">
+					<cover-image src="../../images/go.png" class="img"></cover-image>
+				</cover-view>
+			</cover-view>
+		</block>
+	</view>
+</map>

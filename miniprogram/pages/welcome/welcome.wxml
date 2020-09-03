@@ -1,0 +1,47 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="content" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+	<image class="img_01" src="/images/wel_01.png" hidden="{{page!=0}}"></image>
+	<view class="img_02" hidden="{{page!=1&&page!=2}}">
+		<image class="img_01" src="{{page!=2?'/images/wel_02.png':'/images/wel_03.png'}}"></image>
+		<view class="mokuai">
+			<view class="mo_01" animation='{{ani_01}}'>
+				<image src="../../images/_01.png" class="images_01"></image>
+				<view class="text_01">数据分析</view>
+			</view>
+			<view class="mo_02" animation='{{ani_02}}'>
+				<image src="../../images/_02.png" class="images_01"></image>
+				<view class="text_01">地图导航</view>
+			</view>
+			<view class="mo_03" animation='{{ani_03}}'>
+				<image src="../../images/_03.png" class="images_01"></image>
+				<view class="text_01">数据采集</view>
+			</view>
+			<view class="mo_04" animation='{{ani_04}}'>
+				<image src="../../images/_04.png" class="images_01"></image>
+				<view class="text_01">校园风景</view>
+			</view>
+		</view>
+		<view class="xin" hidden="{{page!=2}}" bindtap="welcome_btn">
+			<image class="img_xin" src="/images/logo_shadow.png" animation="{{ani_05}}"></image>
+			<view class="tiyan" animation="{{ani_06}}">
+				<image src="../../images/welcome_shadow.png" class="tiyan_bg"></image>
+				<view class="text_tiyan">立即体验</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="title">云 迎 新</view>
+	<view class="contents">让你的大学生活更加简单</view>
+	<!-- 底部滑动图标 -->
+	<view class="footer">
+		<view class="b_01">
+			<image src="{{page==0?'/images/circle_r.png':'/images/circle.png'}}" class="{{page==0?'img_':'img'}}"></image>
+		</view>
+		<view class="b_02">
+			<image src="{{page==1?'/images/circle_r.png':'/images/circle.png'}}" class="{{page==1?'img_':'img'}}"></image>
+		</view>
+		<view class="b_03">
+			<image src="{{page==2?'/images/circle_r.png':'/images/circle.png'}}" class="{{page==2?'img_':'img'}}"></image>
+		</view>
+	</view>
+</view>

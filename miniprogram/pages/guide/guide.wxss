@@ -1,0 +1,31 @@
+/* pages/guide/guide.wxss */
+
+.c_0 {
+  width: 180rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 23rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  display: flex;
+  background: white;
+}
+
+.c_20 {
+  line-height: 50rpx;
+  text-align: center;
+  flex: 4;
+}
+
+.img_20 {
+  flex: 1;
+  line-height: 50rpx;
+}
+
+.img {
+  width: 13rpx;
+  height: 23rpx;
+  padding-top: 14rpx;
+  padding-left: 11.5rpx;
+  line-height: 50rpx;
+}
