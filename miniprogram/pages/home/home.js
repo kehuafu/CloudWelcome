@@ -5,14 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    opacity: [false, false, false, false]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.hideHomeButton()//隐藏页面左上角主页按钮
+    wx.hideHomeButton() //隐藏页面左上角主页按钮
   },
 
   /**
@@ -62,5 +62,63 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  item_start(ev) {
+    // console.log(ev.currentTarget.id)
+    switch (ev.currentTarget.id) {
+      case "1":
+        this.data.opacity[0] = true
+        this.setData({
+          opacity: this.data.opacity
+        })
+        break;
+      case "2":
+        this.data.opacity[1] = true
+        this.setData({
+          opacity: this.data.opacity
+        })
+        break;
+      case "3":
+        this.data.opacity[2] = true
+        this.setData({
+          opacity: this.data.opacity
+        })
+        break;
+      case "4":
+        this.data.opacity[3]=true
+        this.setData({
+        opacity:this.data.opacity
+      })
+        break;
+    }
+
+  },
+  item_end(ev) {
+    switch (ev.currentTarget.id) {
+      case "1":
+        this.data.opacity[0] = false
+        this.setData({
+          opacity: this.data.opacity
+        })
+        break;
+      case "2":
+        this.data.opacity[1] = false
+        this.setData({
+          opacity: this.data.opacity
+        })
+        break;
+      case "3":
+        this.data.opacity[2] = false
+        this.setData({
+          opacity: this.data.opacity
+        })
+        break;
+      case "4":
+        this.data.opacity[3]=false
+        this.setData({
+        opacity:this.data.opacity
+      })
+        break;
+    }
   }
 })

@@ -1,1 +1,120 @@
 /* pages/home/home.wxss */
+page {
+  background: #f4f4f4;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.welcome {
+  margin-top: 28rpx;
+  font-size: 30rpx;
+  color: #888888;
+  text-align: center;
+}
+
+.item {
+  margin-top: 38rpx;
+  height: 170rpx;
+  margin-left: 85rpx;
+  margin-right: 85rpx;
+  background: #56d69e;
+  border-radius: 20rpx;
+}
+
+.img {
+  width: 502rpx;
+  height: 170rpx;
+  position: absolute;
+}
+
+.cont {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  color: #ffffff;
+  line-height: 170rpx;
+  text-align: left;
+  margin-left: 61rpx;
+  font-size: 50rpx;
+}
+
+.right {
+  flex: 1;
+  line-height: 170rpx;
+  text-align: right;
+  padding-right: 70rpx;
+}
+
+.right_02 {
+  flex: 1;
+  line-height: 170rpx;
+  text-align: right;
+  padding-right: 32rpx;
+}
+
+.right_03 {
+  flex: 1;
+  line-height: 170rpx;
+  text-align: right;
+  padding-right: 73rpx;
+}
+
+.right_04 {
+  flex: 1;
+  line-height: 170rpx;
+  text-align: right;
+  padding-right: 65rpx;
+}
+
+.img_01 {
+  margin-top: 16rpx;
+  width: 127rpx;
+  height: 138rpx;
+}
+
+.item_02 {
+  margin-top: 45rpx;
+  height: 170rpx;
+  margin-left: 85rpx;
+  margin-right: 85rpx;
+  background: #fe5b5b;
+  border-radius: 20rpx;
+}
+
+.item_03 {
+  margin-top: 45rpx;
+  height: 170rpx;
+  margin-left: 85rpx;
+  margin-right: 85rpx;
+  background: #279ff2;
+  border-radius: 20rpx;
+}
+
+.item_04 {
+  margin-top: 45rpx;
+  height: 170rpx;
+  margin-left: 85rpx;
+  margin-right: 85rpx;
+  background: #9681b6;
+  border-radius: 20rpx;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.foot {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20rpx;
+  color: #888888;
+  font-size: 28rpx;
+}

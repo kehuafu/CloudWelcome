@@ -1,2 +1,45 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class="welcome">欢迎光临华南理工大学广州学院</view>
+<view class="item" style="{{opacity[0]?'opacity: 0.8;':'opacity: 1;'}}" bindtouchstart="item_start"
+  bindtouchend="item_end" id="1">
+  <image class="img" src="../../images/home_01.png"></image>
+  <view class="cont">
+    <view class="left">信息采集</view>
+    <view class="right">
+      <image class="img_01" src="../../images/_03.png"></image>
+    </view>
+  </view>
+</view>
+<view class="item_02" style="{{opacity[1]?'opacity: 0.8;':'opacity: 1;'}}" bindtouchstart="item_start"
+  bindtouchend="item_end" id="2">
+  <image class="img" src="../../images/home_02.png"></image>
+  <view class="cont">
+    <view class="left">校园风景</view>
+    <view class="right_02">
+      <image class="img_01" src="../../images/_04.png" style="width:200rpx;height:132rpx;"></image>
+    </view>
+  </view>
+</view>
+<view class="item_03" style="{{opacity[02]?'opacity: 0.8;':'opacity: 1;'}}" bindtouchstart="item_start"
+  bindtouchend="item_end" id="3">
+  <image class="img" src="../../images/home_03.png"></image>
+  <view class="cont">
+    <view class="left">导航指引</view>
+    <view class="right_03">
+      <image class="img_01" src="../../images/_02.png" style="width:120rpx;height:120rpx;"></image>
+    </view>
+  </view>
+</view>
+<view class="item_04" style="{{opacity[3]?'opacity: 0.8;':'opacity: 1;'}}" bindtouchstart="item_start"
+  bindtouchend="item_end" id="4">
+  <image class="img" src="../../images/home_04.png"></image>
+  <view class="cont">
+    <view class="left">学生数据</view>
+    <view class="right_04">
+      <image class="img_01" src="../../images/_01.png" style="width:134rpx;height:134rpx;"></image>
+    </view>
+  </view>
+</view>
+<view class="footer">
+  <view class="foot">Copyright © 2020 V1.0.0</view>
+</view>
