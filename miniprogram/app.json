@@ -2,6 +2,8 @@
   "pages": [
     "pages/welcome/welcome",
     "pages/home/home",
+    "pages/campusDedail/campusDedail",
+    "pages/campus/campus",
     "pages/guide/guide",
     "pages/index/index",
     "pages/map/map",

@@ -120,5 +120,33 @@ Page({
       })
         break;
     }
+  },
+  /**
+   * 跳转
+   */
+  goto(ev){
+    console.log(ev.currentTarget.id)
+    switch(ev.currentTarget.id){
+      case "1":
+        wx.navigateTo({
+          url: '/pages/message/message',
+        })
+        break;
+      case "2":
+        wx.navigateTo({
+          url: '/pages/campus/campus',
+        })
+        break;
+      case "3":
+        wx.navigateTo({
+          url: '/pages/guide/guide',
+        })
+        break;
+      case "4":
+        wx.navigateTo({
+          url: '/pages/dataAnalysis/dataAnalysis',
+        })
+        break;
+    }
   }
 })

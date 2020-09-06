@@ -1,7 +1,7 @@
 <!--pages/home/home.wxml-->
 <view class="welcome">欢迎光临华南理工大学广州学院</view>
 <view class="item" style="{{opacity[0]?'opacity: 0.8;':'opacity: 1;'}}" bindtouchstart="item_start"
-  bindtouchend="item_end" id="1">
+  bindtouchend="item_end" id="1" bindtap="goto">
   <image class="img" src="../../images/home_01.png"></image>
   <view class="cont">
     <view class="left">信息采集</view>
@@ -11,7 +11,7 @@
   </view>
 </view>
 <view class="item_02" style="{{opacity[1]?'opacity: 0.8;':'opacity: 1;'}}" bindtouchstart="item_start"
-  bindtouchend="item_end" id="2">
+  bindtouchend="item_end" id="2" bindtap="goto">
   <image class="img" src="../../images/home_02.png"></image>
   <view class="cont">
     <view class="left">校园风景</view>
@@ -21,7 +21,7 @@
   </view>
 </view>
 <view class="item_03" style="{{opacity[02]?'opacity: 0.8;':'opacity: 1;'}}" bindtouchstart="item_start"
-  bindtouchend="item_end" id="3">
+  bindtouchend="item_end" id="3" bindtap="goto">
   <image class="img" src="../../images/home_03.png"></image>
   <view class="cont">
     <view class="left">导航指引</view>
@@ -31,7 +31,7 @@
   </view>
 </view>
 <view class="item_04" style="{{opacity[3]?'opacity: 0.8;':'opacity: 1;'}}" bindtouchstart="item_start"
-  bindtouchend="item_end" id="4">
+  bindtouchend="item_end" id="4" bindtap="goto">
   <image class="img" src="../../images/home_04.png"></image>
   <view class="cont">
     <view class="left">学生数据</view>

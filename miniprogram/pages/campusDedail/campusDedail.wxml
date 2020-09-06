@@ -1,0 +1,23 @@
+<!--pages/campusDedail/campusDedail.wxml-->
+<view class="item_head" data-id="-1" bindtap="bindtap">
+  <image class="img" src="cloud://cloudwelcome-qrvgt.636c-cloudwelcome-qrvgt-1303010378/images/明辨湖.jpg">
+  </image>
+</view>
+<view class="content">
+  <view class="text">
+    <view class="title">图书馆文化史</view>
+    <view class="con_txt">
+      <view
+        class="text_c">每次遇到中文排版页面时，需要每个段落开头缩进两格。之前傻乎乎的，用程序检测标签来进行中文段落开头的空两格缩进，还在骂HTML怎么就不能像WORD一样，自动识别中文编排格式。直到今天和公司美工在做项目时，才从他那里得知，原来自己是坐在井底看天了，CSS的一个属性就可以搞定所有的段落。废话不多说，看代码。</view>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="foot">
+      <text class="txt">当前距离</text>
+      <text class="txt_juli">300</text>
+      <text class="txt_mi">m</text>
+      <text class="txt_go" bindtap="goto_guide">去这里</text>
+      <image src="../../images/goto.png" class="img_goto" bindtap="goto_guide"></image>
+    </view>
+  </view>
+</view>

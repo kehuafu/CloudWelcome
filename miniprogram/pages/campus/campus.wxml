@@ -1,0 +1,16 @@
+<!--pages/campus/campus.wxml-->
+<view class="item_head" data-id="-1" bindtap="bindtap">
+  <view class="txt">校铭石</view>
+  <image class="img" src="cloud://cloudwelcome-qrvgt.636c-cloudwelcome-qrvgt-1303010378/images/校门.jpg">
+  </image>
+</view>
+<view class="item_content">
+  <block wx:for="{{4}}" wx:key="index">
+    <view class="item_c" bindtap="bindtap" data-id="{{index}}">
+      <view class="txt">明辨湖</view>
+      <image class="img"
+        src="cloud://cloudwelcome-qrvgt.636c-cloudwelcome-qrvgt-1303010378/images/明辨湖.jpg">
+      </image>
+    </view>
+  </block>
+</view>
