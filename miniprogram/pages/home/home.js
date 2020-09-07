@@ -128,8 +128,20 @@ Page({
     console.log(ev.currentTarget.id)
     switch(ev.currentTarget.id){
       case "1":
-        wx.navigateTo({
-          url: '/pages/message/message',
+        wx.showModal({
+          title: '需登录使用',
+          content: '是否跳转登录界面',
+          confirmColor:'#48c9af',
+          success (res) {
+            if (res.confirm) {
+              console.log('用户点击确定')
+              wx.navigateTo({
+                url: '/pages/login/login',
+              })
+            } else if (res.cancel) {
+              console.log('用户点击取消')
+            }
+          }
         })
         break;
       case "2":

@@ -34,7 +34,7 @@
   bindtouchend="item_end" id="4" bindtap="goto">
   <image class="img" src="../../images/home_04.png"></image>
   <view class="cont">
-    <view class="left">学生数据</view>
+    <view class="left">数据分析</view>
     <view class="right_04">
       <image class="img_01" src="../../images/_01.png" style="width:134rpx;height:134rpx;"></image>
     </view>

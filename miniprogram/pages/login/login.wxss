@@ -1,0 +1,93 @@
+/* pages/login/login.wxss */
+@import "../../style/fonts.wxss";
+
+page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.logo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.img_logo {
+  width: 262rpx;
+  height: 262rpx;
+  margin-top: 19rpx;
+}
+
+.title {
+  width: 100%;
+  margin-top: 30rpx;
+  font-family: 'Pacifico';
+  font-size: 65rpx;
+  color: white;
+}
+
+.txt {
+  width: 100%;
+  margin-top: 26rpx;
+  color: white;
+}
+
+.login {
+  background: white;
+  height: 268rpx;
+  margin-left: 139rpx;
+  margin-right: 139rpx;
+  margin-top: 74rpx;
+  border-radius: 30rpx;
+}
+
+.top {
+  width: 100%;
+  height: 88rpx;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 3;
+  border-bottom: solid 1rpx #888888;
+  margin-left: 20rpx;
+  margin-right: 40rpx;
+}
+
+.img_user {
+  width: 37rpx;
+  height: 45rpx;
+  margin-top: 43rpx;
+}
+
+.input {
+  font-size: 32rpx;
+  margin-top: 40rpx;
+  color: #000;
+}
+
+.foot {
+  margin-left: 109rpx;
+  margin-right: 109rpx;
+  height: 81rpx;
+  background: #48c9af;
+  margin-top: 60rpx;
+  text-align: center;
+  line-height: 81rpx;
+  color: white;
+  font-size: 35rpx;
+  border-radius: 30rpx;
+}

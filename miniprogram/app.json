@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/welcome/welcome",
+    "pages/login/login",
     "pages/home/home",
+    "pages/message/message",
+    "pages/welcome/welcome",
     "pages/campusDedail/campusDedail",
     "pages/campus/campus",
     "pages/guide/guide",

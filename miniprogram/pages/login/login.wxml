@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<image src="../../images/login.png" class="image"></image>
+<view class="logo">
+  <image src="../../images/logo.png" class="img_logo"></image>
+  <view class="title">云迎新</view>
+  <view class="txt">让你的大学生活更加简单</view>
+  <view class="login">
+    <view class="top">
+      <view class="left">
+        <image src="../../images/1.png" class="img_user"></image>
+      </view>
+      <view class="right">
+        <input class="input" type="text" placeholder='请输入你的学号' maxlength='12'></input>
+      </view>
+    </view>
+    <view class="foot" bindtouchstart="bindtouchstart" bindtouchend="bindtouchend" style="{{login?' background: #009879;':' background: #48c9af;'}}">
+      立即登录
+    </view>
+
+  </view>
+</view>
