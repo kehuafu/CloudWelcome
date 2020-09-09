@@ -1,26 +1,14 @@
 {
   "pages": [
-    "pages/login/login",
-    "pages/home/home",
-    "pages/message/message",
     "pages/welcome/welcome",
+    "pages/dataAnalysis/dataAnalysis",
+    "pages/home/home",
+    "pages/login/login",
+    "pages/message/message",
     "pages/campusDedail/campusDedail",
     "pages/campus/campus",
     "pages/guide/guide",
-    "pages/index/index",
-    "pages/map/map",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/map/map"
   ],
   "permission": {
     "scope.userLocation": {
@@ -39,6 +27,10 @@
     "subway": {
       "version": "1.0.9",
       "provider": "wx6aaf93c4435fa1c1"
+    },
+    "echarts": {
+      "version": "1.0.5",
+      "provider": "wx1db9e5ab1149ea03"
     }
   },
   "window": {

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "chart": "plugin://echarts/chart"
+  },
+  "navigationBarBackgroundColor": "#48c9af",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "数据分析"
+
+}

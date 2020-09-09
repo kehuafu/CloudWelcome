@@ -1,0 +1,10 @@
+<!--pages/dataAnalysis/dataAnalysis.wxml-->
+<view class="top">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    {{array[index]}} </picker>
+  <image src="../../images/down.png" class="img"></image>
+</view>
+<!-- <view class="top_selected">
+  <view class="sel"></view>
+</view> -->
+<chart chart-class="chart" option="{{ option}}" notMerge bindinstance="onInstance" />

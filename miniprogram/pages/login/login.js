@@ -72,5 +72,14 @@ Page({
     this.setData({
       login: false
     })
+  },
+  /**
+   * 立即登录
+   * @param {} ev 
+   */
+  login(ev){
+    wx.redirectTo({
+      url: '/pages/message/message',
+    })
   }
 })
