@@ -8,3 +8,21 @@
   <view class="sel"></view>
 </view> -->
 <chart chart-class="chart" option="{{ option}}" notMerge bindinstance="onInstance" />
+<view class="space"></view>
+<view class="footer">
+  <view class="top_">数据汇总</view>
+  <view class="cont">
+    <view class="c1">
+      <view class="left">男生</view>
+      <view class="right" style="color:#2d7dc8">2200人</view>
+    </view>
+    <view class="c2">
+      <view class="left">女生</view>
+      <view class="right" style="color:#f65b57">2100人</view>
+    </view>
+    <view class="c3">
+      <view class="left">总人数</view>
+      <view class="right">4300人</view>
+    </view>
+  </view>
+</view>

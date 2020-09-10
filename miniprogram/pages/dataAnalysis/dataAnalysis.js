@@ -114,9 +114,11 @@ Page({
             },
             "legend": {},
             "series": [{
-              "type": "bar"
+              "type": "bar",
+              "color": "#2E7DC8"
             }, {
-              "type": "bar"
+              "type": "bar",
+              "color": "#F65B57"
             }],
             "tooltip": {},
             "xAxis": {

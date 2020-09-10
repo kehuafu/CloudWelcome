@@ -24,11 +24,13 @@ page {
   opacity: 1;
   background: red;
 }
-.sel{
+
+.sel {
   width: 100%;
   height: 100%;
   background: yellow;
 }
+
 .img {
   width: 26rpx;
   height: 13rpx;
@@ -42,4 +44,62 @@ page {
   margin-top: 10rpx;
   width: 100%;
   height: 750rpx;
+}
+
+.space {
+  width: 100%;
+  height: 25rpx;
+  background: #f4f4f4;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+}
+
+.cont {
+  height: 240rpx;
+  margin-left: 33rpx;
+  margin-right: 33rpx;
+  display: flex;
+  border-radius: 15rpx;
+  flex-direction: column;
+  border: solid 1rpx #f4f4f4;
+}
+
+.c1 {
+  flex: 1;
+  display: flex;
+}
+
+.c2 {
+  flex: 1;
+  display: flex;
+}
+
+.c3 {
+  flex: 1;
+  display: flex;
+}
+.top_{
+  padding-top: 30rpx;
+  width: 100%;
+  font-size: 28rpx;
+  padding-left: 38rpx;
+  height: 50rpx;
+  color: #353535;
+}
+.left {
+  flex: 1;
+  color: #353535;
+  padding-left: 28rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+
+.right {
+  flex: 1;
+  line-height: 80rpx;
+  padding-right: 27rpx;
+  text-align: right;
 }
