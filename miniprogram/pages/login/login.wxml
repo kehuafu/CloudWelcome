@@ -10,7 +10,7 @@
         <image src="../../images/1.png" class="img_user"></image>
       </view>
       <view class="right">
-        <input class="input" type="text" placeholder='请输入你的学号' maxlength='12' type="number"></input>
+        <input class="input" type="text" placeholder='请输入你的学号' maxlength='12' type="number" bindinput="input"></input>
       </view>
     </view>
     <view class="foot" bindtouchstart="bindtouchstart" bindtouchend="bindtouchend" style="{{login?' background: #009879;':' background: #48c9af;'}}" bindtap="login">

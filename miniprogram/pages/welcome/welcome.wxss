@@ -164,3 +164,9 @@ page {
   font-weight: 500;
   margin-top: 36rpx;
 }
+.tiyan_act{
+  width: 207rpx;
+  height: 86rpx;
+  position: relative;
+  
+}

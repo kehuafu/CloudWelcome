@@ -26,7 +26,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.setStorage({
+      data: 1,
+      key: "auth", //
+    })
   },
 
   /**
@@ -85,10 +88,10 @@ Page({
         })
         break;
       case "4":
-        this.data.opacity[3]=true
+        this.data.opacity[3] = true
         this.setData({
-        opacity:this.data.opacity
-      })
+          opacity: this.data.opacity
+        })
         break;
     }
 
@@ -114,35 +117,41 @@ Page({
         })
         break;
       case "4":
-        this.data.opacity[3]=false
+        this.data.opacity[3] = false
         this.setData({
-        opacity:this.data.opacity
-      })
+          opacity: this.data.opacity
+        })
         break;
     }
   },
   /**
    * 跳转
    */
-  goto(ev){
+  goto(ev) {
     console.log(ev.currentTarget.id)
-    switch(ev.currentTarget.id){
+    switch (ev.currentTarget.id) {
       case "1":
-        wx.showModal({
-          title: '需登录使用',
-          content: '是否跳转登录界面',
-          confirmColor:'#48c9af',
-          success (res) {
-            if (res.confirm) {
-              console.log('用户点击确定')
-              wx.navigateTo({
-                url: '/pages/login/login',
-              })
-            } else if (res.cancel) {
-              console.log('用户点击取消')
+        if (wx.getStorageSync('token') == '') {
+          wx.showModal({
+            title: '需登录使用',
+            content: '是否跳转登录界面',
+            confirmColor: '#48c9af',
+            success(res) {
+              if (res.confirm) {
+                console.log('用户点击确定')
+                wx.navigateTo({
+                  url: '/pages/login/login',
+                })
+              } else if (res.cancel) {
+                console.log('用户点击取消')
+              }
             }
-          }
-        })
+          })
+        }else{
+          wx.navigateTo({
+            url: '/pages/message/message',
+          })
+        }
         break;
       case "2":
         wx.navigateTo({

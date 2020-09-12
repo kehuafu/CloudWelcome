@@ -23,7 +23,7 @@
 		</view>
 		<view class="xin" hidden="{{page!=2}}" bindtap="welcome_btn">
 			<image class="img_xin" src="/images/logo_shadow.png" animation="{{ani_05}}"></image>
-			<view class="tiyan" animation="{{ani_06}}">
+			<view class="tiyan" animation="{{ani_06}}" style="{{tiyan?'opacity: 0.6;':'opacity: 1;'}}" bindtouchstart="bindtouchstart" bindtouchend="bindtouchend">
 				<image src="../../images/welcome_shadow.png" class="tiyan_bg"></image>
 				<view class="text_tiyan">立即体验</view>
 			</view>

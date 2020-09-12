@@ -13,13 +13,48 @@ Page({
     ani_03: '',
     ani_04: '',
     ani_05: '',
+    tiyan: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //认证跳转
+    var auth = wx.getStorageSync("auth")
+    var token = wx.getStorageSync('token')
+    if (auth == 1 || token != "") {
+      wx.redirectTo({
+        url: '/pages/home/home',
+      })
+      return
+    } else {
+      var that = this
+      wx.cloud.callFunction({
+        name: 'getUser',
+        complete: res => {
+          console.log('callFunction test result: ', res.result.openid)
+          wx.setStorageSync('openid', res.result.openid)
+          const db = wx.cloud.database()
+          db.collection('user').where({
+              _openid: res.result.openid,
+            })
+            .get({
+              success: function (res) {
+                // res.data 是包含以上定义的两条记录的数组
+                //console.log(res.data[0])
+                if(res.data[0]!=''){
+                  wx.setStorageSync('token', res.data[0].token)
+                  wx.redirectTo({
+                    url: '/pages/home/home',
+                  })
+                  return
+                }
+              }
+            })
+        }
+      })
+    }
   },
 
   /**
@@ -207,6 +242,16 @@ Page({
     console.log("立即体验", e)
     wx.redirectTo({
       url: '/pages/home/home',
+    })
+  },
+  bindtouchstart(e) {
+    this.setData({
+      tiyan: true
+    })
+  },
+  bindtouchend(e) {
+    this.setData({
+      tiyan: false
     })
   }
 })
