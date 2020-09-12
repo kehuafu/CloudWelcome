@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/welcome/welcome",
+    "pages/campus/campus",
     "pages/login/login",
+    "pages/welcome/welcome",
     "pages/dataAnalysis/dataAnalysis",
     "pages/home/home",
     "pages/message/message",
     "pages/campusDedail/campusDedail",
-    "pages/campus/campus",
     "pages/guide/guide",
     "pages/map/map"
   ],
