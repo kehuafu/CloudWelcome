@@ -1,2 +1,71 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view class="box-text-title">基本信息</view>
+
+<view class="inputbox1">
+  <view class="inbox">
+    <label>学号</label><input type="number" class="input-margin" placeholder="请输入学号" placeholder-class="phcolor"></input>
+  </view>
+
+  <view>
+    <image style="opacity:{{0.4}}" class="img1" mode="widthFix"
+      src="cloud://cloudwelcome-qrvgt.636c-cloudwelcome-qrvgt-1303010378/images/阴影-短.png"></image>
+  </view>
+
+  <view class="inbox">
+    <label>姓名</label><input class="input-margin" placeholder-class="phcolor" placeholder="请输入姓名"></input>
+  </view>
+
+  <view>
+    <image style="opacity:{{0.4}}" class="img1" mode="widthFix"
+      src="cloud://cloudwelcome-qrvgt.636c-cloudwelcome-qrvgt-1303010378/images/阴影-短.png"></image>
+  </view>
+
+  <view class='inbox'>
+
+    <label>性别</label>
+    <view class="offer_item">
+      <select prop-array='{{selectList}}' selectText="请选择" stype="3" selectShow="{{select}}"
+        bind:m_select_touch="m_select_touch"></select>
+    </view>
+  </view>
+  <!-- <view class="inbox">
+  <label>性别</label><input class="input-margin" placeholder="请选择" ></input>
+  </view> -->
+
+  <view>
+    <image style="opacity:{{0.4}}" class="img1" mode="widthFix"
+      src="cloud://cloudwelcome-qrvgt.636c-cloudwelcome-qrvgt-1303010378/images/阴影-短.png"></image>
+  </view>
+
+  <view class="inbox">
+    <label>联系方式</label><input class="input-margin1" placeholder-class="phcolor" placeholder="请输入电话"></input>
+  </view>
+
+  <view>
+    <image style="opacity:{{0.4}}" class="img1" mode="widthFix"
+      src="cloud://cloudwelcome-qrvgt.636c-cloudwelcome-qrvgt-1303010378/images/阴影-短.png"></image>
+  </view>
+
+  <view class="inbox">
+    <label>家庭住址</label><input class="input-margin1" placeholder-class="phcolor" placeholder="请输入现住址"></input>
+  </view>
+</view>
+
+<view class="box-text-title">家庭信息</view>
+<view class="inputbox2">
+  <view class="inbox">
+    <label>家长姓名</label><input class="input-margin1" placeholder-class="phcolor" placeholder="请输入家长姓名"></input>
+  </view>
+
+  <view>
+    <image style="opacity:{{0.4}}" class="img1" mode="widthFix"
+      src="cloud://cloudwelcome-qrvgt.636c-cloudwelcome-qrvgt-1303010378/images/阴影-短.png"></image>
+  </view>
+
+  <view class="inbox">
+    <label>联系方式</label><input class="input-margin1" placeholder-class="phcolor" placeholder="请输入家长电话"></input>
+  </view>
+</view>
+
+<form bindsubmit="onSubmit">
+  <button class="but1" form-type="submit" bindtap="OnTap">确定</button>
+</form>

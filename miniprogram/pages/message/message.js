@@ -1,66 +1,62 @@
-// pages/message/message.js
+const app = getApp()
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  
+  OnTap:function(){
+    wx.redirectTo({
+      url: '../message_success/message_success',
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
-})
+    data: {
+      selectList: [{
+        "id": "10",
+        "text": "男"
+      }, {
+        "id": "21",
+        "text": "女"
+      }],
+      select: false,
+      select_value1: {
+        "id": "0",
+        "text": "未选择"
+      },
+      select_value2: {
+        "id": "0",
+        "text": "未选择"
+      },
+      select_value3: {
+        "id": "0",
+        "text": "未选择"
+      }
+    },
+    onLoad: function () {
+      
+    },
+    m_select_touch(e) {
+      let that = this;
+      let selectIndex = e.detail.selIndex;
+      let stype = e.detail.stype;
+      console.log(stype);
+      if (stype == "1") {
+        let value1 = that.data.selectList[selectIndex];
+        that.setData({
+          select_value1: value1
+        })
+      }
+      else if (stype == "2") {
+        let value2 = that.data.selectList[selectIndex];
+        that.setData({
+          select_value2: value2
+        })
+      }
+      else {
+        let value3 = that.data.selectList[selectIndex];
+        that.setData({
+          select_value3: value3
+        })
+      }
+  
+    }
+}
+)

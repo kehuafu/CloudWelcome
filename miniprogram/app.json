@@ -1,13 +1,14 @@
 {
   "pages": [
+    "pages/campus/campus",
     "pages/welcome/welcome",
+    "pages/message/message",
+    "pages/message_success/message_success",
     "pages/guide/guide",
     "pages/map/map",
     "pages/dataAnalysis/dataAnalysis",
-    "pages/campus/campus",
     "pages/login/login",
     "pages/home/home",
-    "pages/message/message",
     "pages/campusDedail/campusDedail"
   ],
   "permission": {

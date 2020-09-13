@@ -1,1 +1,75 @@
-/* pages/message/message.wxss */
+page{
+  background-color: #f4f4f4;
+}
+
+.box-text-title{
+  margin-bottom: 23rpx;
+  font-size: 28rpx;
+  color: #888888;
+  margin-left: 28rpx;
+  margin-top: 38rpx;
+}
+.inputbox1{
+  padding-top: 27rpx;
+  width: auto;
+  height: 467rpx;
+  background-color: white;
+}
+.inputbox2{
+  padding-top: 27rpx;
+  width: auto;
+  height: 165rpx;
+  background-color: white;
+}
+
+.inbox{
+  display: flex;
+  /* margin-bottom: 22rpx; */
+  /* margin-top: 31rpx; */
+  margin-left: 31rpx;
+  /* padding-top: 27rpx; */
+}
+.input-margin{
+  width: 460rpx;
+  margin-left: 120rpx;
+}
+.input-margin1{
+  width: 460rpx;
+  margin-left: 54rpx;
+}
+label{
+  font-size: 35rpx;
+}
+input{
+  font-size: 28rpx;
+  color: #333;
+}
+
+.but1{
+  margin-top: 72rpx;
+  width: 208rpx;
+  height: 81rpx;
+  background-color: #48c9af;
+  color: white;
+}
+
+.img1{
+  width: 720rpx;
+  margin-bottom: 22rpx;
+  margin-left: 31rpx;
+  margin-top: 22rpx;
+}
+
+.offer_item{
+  width: 520rpx;
+  height: 50rpx;
+  margin-left: 110rpx;
+  color: #333;
+  font-size: 40rpx;
+  line-height: 50rpx;
+  /* box-sizing: border-box; */
+}
+
+.phcolor{
+  color: #ddd;
+}

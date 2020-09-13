@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "select":"../../components/select/select"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#48c9af",
+  "navigationBarTitleText": "信息采集"
 }
