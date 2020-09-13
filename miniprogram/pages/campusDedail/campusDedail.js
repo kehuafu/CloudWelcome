@@ -12,7 +12,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("校园风景详情->",options.id)
+    console.log("校园风景详情->", options.id)
+    var index = options.id
+    const db = wx.cloud.database()
+    db.collection('campus').where({
+      _id: index
+    }).get({
+      success: function (res) {
+        console.log(res)
+      }
+    })
   },
 
   /**
@@ -67,7 +76,7 @@ Page({
    * 去地图路线规划
    * @param ev 
    */
-  goto_guide(ev){
+  goto_guide(ev) {
     wx.navigateTo({
       url: '/pages/guide/guide',
     })

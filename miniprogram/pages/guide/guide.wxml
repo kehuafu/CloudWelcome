@@ -1,9 +1,11 @@
 <!--pages/guide/guide.wxml-->
-<map class="map" polygons="{{polygons}}" polyline='{{polyline}}' markers="{{markers}}" show-location='{{true}}' bindcallouttap="callouttap" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" bindtap='bindtap' style="width: 100%; height: 1334rpx;">
+<map class="map" polygons="{{polygons}}" polyline='{{polyline}}' markers="{{markers}}" show-location='{{true}}'
+	bindcallouttap="callouttap" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" bindtap='bindtap'
+	style="{{isClick?'width: 100%; height: 1084rpx;':'width: 100%; height: 1334rpx;'}}">
 	<view slot="callout">
-		<block wx:for="{{markerIds}}" wx:key="*this">
+		<block wx:for="{{markers}}" wx:key="*this">
 			<cover-view marker-id="{{index}}" class="c_0">
-				<cover-view class="c_20">{{item}}</cover-view>
+				<cover-view class="c_20">{{item.markerName}}</cover-view>
 				<cover-view class="img_20">
 					<cover-image src="../../images/go.png" class="img"></cover-image>
 				</cover-view>
@@ -11,3 +13,19 @@
 		</block>
 	</view>
 </map>
+<view class="footer" hidden="{{!isClick}}">
+	<view class="top">
+		<image src="../../images/marker.png" class="img_m"></image>
+		<text class="text">{{markers[index].markerName}}</text>
+		<view class="right_top" bindtap="bindtap">
+			<image src="../../images/cancel.png" class="cancel_img"></image>
+		</view>
+	</view>
+	<view class="bot">
+		<text class="tl">当前距离</text>
+		<text class="juli">{{'...'}}</text>
+		<text class="mi">m</text>
+		<view class="right_bot" bindtap="gotoRute">到这去</view>
+	</view>
+
+</view>

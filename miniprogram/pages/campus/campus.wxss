@@ -32,7 +32,7 @@ page {
 .item_content {
   width: 650rpx;
   height: 800rpx;
-  margin-left: 54rpx;
+  margin-left: 57rpx;
   margin-right: 50rpx;
   margin-top: 48rpx;
   display: flex;

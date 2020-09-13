@@ -81,7 +81,8 @@ page {
   flex: 1;
   display: flex;
 }
-.top_{
+
+.top_ {
   padding-top: 30rpx;
   width: 100%;
   font-size: 28rpx;
@@ -89,6 +90,7 @@ page {
   height: 50rpx;
   color: #353535;
 }
+
 .left {
   flex: 1;
   color: #353535;
@@ -102,4 +104,14 @@ page {
   line-height: 80rpx;
   padding-right: 27rpx;
   text-align: right;
+}
+
+.shuoming {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 28rpx;
+  color: #888888;
+  padding-bottom: 15rpx;
 }

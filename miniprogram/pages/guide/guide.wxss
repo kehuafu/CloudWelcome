@@ -1,5 +1,4 @@
 /* pages/guide/guide.wxss */
-
 .c_0 {
   width: 180rpx;
   height: 50rpx;
@@ -28,4 +27,76 @@
   padding-top: 14rpx;
   padding-left: 11.5rpx;
   line-height: 50rpx;
+}
+
+.footer {
+  width: 100%;
+  height: 200rpx;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  flex: 1;
+}
+
+.bot {
+  flex: 1;
+}
+
+.img_m {
+  width: 33rpx;
+  height: 41rpx;
+  margin-top: 50rpx;
+  margin-left: 33rpx;
+}
+.text{
+  margin-left: 14rpx;
+  font-size: 45rpx;
+  color: #335533;
+}
+.right_top{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.cancel_img{
+  width: 26rpx;
+  height: 26rpx;
+  padding-top: 24rpx;
+}
+.tl{
+  font-size: 28rpx;
+  color: #888888;
+  margin-left: 33rpx;
+  margin-top: 34rpx;
+}
+.juli{
+  font-size: 28rpx;
+  color: #fe5b5b;
+  margin-left: 3rpx;
+}
+.mi{
+  font-size: 28rpx;
+  color: #888888;
+}
+.right_bot{
+  width: 190rpx;
+  height: 80rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 10rpx;
+  margin-bottom: 25rpx;
+  margin-right: 31rpx;
+  border: solid 1rpx #335533;
+  color: #335533;
+  font-size: 40rpx;
+  line-height: 80rpx;
+  text-align: center;
 }
